@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+    <script>
+        var app = angular.module("app", []);
+        app.controller('MeuCtrl', ['$scope', '$http', function ($scope, $http) {
+            $scope.title = "Meu Controller";
+            $scope.token = "";
+            $scope.autenticar = function () {
+                DoAuth();
+            }
+
+            var authurl = 'http://localhost:50753/api/security/token';
+            function DoAuth() {
+                var data = "grant_type=password&username=terra&password=terra";
+                $http.post(authurl, data, { headers: { 'content-Type': 'application/x-www-form-urlencoded' } })
+                .success(function (result) {
+                    $scope.token = result.access_token;
+                })
+            };
+        }]);
+    </script>
+
+    <div ng-app="app" ng-controller="MeuCtrl">
+        <input type="text" id="username" name="username" value="" /><br />
+        <input type="text" id="password" name="password" value="" /><br />
+        <input type="submit" id="auth-button" ng-click="autenticar()" value="Logar" /><br />
+        <input type="submit" id="request-button" value="Fazer Requisição" /><br />
+        <div id="result-area">{{token}}</div>
+    </div>
+</body>
+</html>
