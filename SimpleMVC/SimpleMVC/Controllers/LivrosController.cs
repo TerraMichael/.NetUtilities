@@ -55,6 +55,7 @@ namespace SimpleMVC.Controllers
         }
 
         // GET: Livros/Edit/5
+        [Route("editar-{id}")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -74,6 +75,7 @@ namespace SimpleMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("editar-{id}")]
         public ActionResult Edit([Bind(Include = "IDLivro,Titulo,Autor,Preco,Estoque,Disponivel")] Livro livro)
         {
             if (ModelState.IsValid)
