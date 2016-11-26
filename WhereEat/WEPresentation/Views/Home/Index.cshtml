@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Where does you eat today?</h1>
+    <p class="lead">Click on the button below to choice a random restaurant!</p>
+    <p>
+        @if (ViewBag.NiceTryMode != null && ViewBag.NiceTryMode == true)
+        {
+            @Html.Label("Nice Try, Bitch!!!", new { @style = "color:red" })
+        }
+        else
+        {
+            @Html.ActionLink("Good Luck! (6) >>", "Random", "Restaurants", null, new { @class = "btn btn-primary btn-lg" })
+        }
+
+    </p>
+</div>
+
+<div class="row">
+
+</div>
