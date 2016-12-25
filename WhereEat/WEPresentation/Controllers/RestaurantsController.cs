@@ -10,6 +10,7 @@ using System.Web.Mvc;
 using WEPresentation.Models;
 using Excel;
 using static WEPresentation.Enums.Enums;
+using WhereEat.Net;
 
 namespace WEPresentation.Controllers
 {
@@ -60,7 +61,7 @@ namespace WEPresentation.Controllers
 
                     List<Restaurant> restaurants = new List<Restaurant>();
 
-                    foreach(DataRow row in result.Tables[0].Rows)
+                    foreach (DataRow row in result.Tables[0].Rows)
                         restaurants.Add(new Restaurant { Name = row["Restaurante"].ToString(), Category = (Category)Enum.Parse(typeof(Category), row["Categoria"].ToString(), true) });
 
                     db.Restaurants.AddRange(restaurants);
@@ -78,10 +79,10 @@ namespace WEPresentation.Controllers
         {
             int number = 0;
             List<Restaurant> restaurants = db.Restaurants.ToList();
-            if(restaurants.Count > 0)
+            Restaurant restaurantChoiced = new Restaurant();
+            if (restaurants.Count > 0)
             {
                 Configuration config = db.Configurations.FirstOrDefault();
-                Restaurant restaurantChoiced = new Restaurant();
 
                 int minIdRestaurant = restaurants.Min(r => r.Id);
                 int maxIdRestaurant = restaurants.Max(r => r.Id);
@@ -101,7 +102,9 @@ namespace WEPresentation.Controllers
                     db.SaveChanges();
                 }
             }
-            
+
+            Mail mail = new Mail();
+            mail.sendMail(string.Format("O restaurante de hoje é: {0} !", restaurantChoiced.Name), "Where does to eat today?", "michael.terra@thomsonreuters.com");
 
             return RedirectToAction("Details", new { id = number });
         }

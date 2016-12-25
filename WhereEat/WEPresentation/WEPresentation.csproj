@@ -403,6 +403,12 @@
       <DependentUpon>201611262054527_Update261120168.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WhereEat.Net\WhereEat.Net.csproj">
+      <Project>{5392214c-05a0-44f8-ab33-b81699f8419e}</Project>
+      <Name>WhereEat.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEPresentation", "WEPresent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEPresentation.Tests", "WEPresentation.Tests\WEPresentation.Tests.csproj", "{CEDB220A-F510-4335-B025-920E2B168BA6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{1F06ED4E-2B11-44F8-86D9-05536D228874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhereEat.Net", "WhereEat.Net\WhereEat.Net.csproj", "{5392214C-05A0-44F8-AB33-B81699F8419E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{CEDB220A-F510-4335-B025-920E2B168BA6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CEDB220A-F510-4335-B025-920E2B168BA6}.Release|x86.ActiveCfg = Release|x86
 		{CEDB220A-F510-4335-B025-920E2B168BA6}.Release|x86.Build.0 = Release|x86
+		{5392214C-05A0-44F8-AB33-B81699F8419E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5392214C-05A0-44F8-AB33-B81699F8419E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5392214C-05A0-44F8-AB33-B81699F8419E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5392214C-05A0-44F8-AB33-B81699F8419E}.Debug|x86.Build.0 = Debug|Any CPU
+		{5392214C-05A0-44F8-AB33-B81699F8419E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5392214C-05A0-44F8-AB33-B81699F8419E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5392214C-05A0-44F8-AB33-B81699F8419E}.Release|x86.ActiveCfg = Release|Any CPU
+		{5392214C-05A0-44F8-AB33-B81699F8419E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,5 +52,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5DAEE4AC-A9E6-4E02-8623-143011C592CB} = {F5763196-D4E0-45D3-8F6F-31FAE2B03E90}
 		{CEDB220A-F510-4335-B025-920E2B168BA6} = {F5763196-D4E0-45D3-8F6F-31FAE2B03E90}
+		{5392214C-05A0-44F8-AB33-B81699F8419E} = {1F06ED4E-2B11-44F8-86D9-05536D228874}
 	EndGlobalSection
 EndGlobal
