@@ -20,12 +20,16 @@ namespace TerraPage
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                "~/Scripts/bootstrap.min.js", 
+                "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.min.css",
                       "~/Content/landing-page.css"));
+
+            bundles.Add(new StyleBundle("~/font-awesome/css").Include(
+                    "~/font-awesome/css/font-awesome.min.css",
+                    "~/font-awesome/css/font-awesome.css"));
         }
     }
 }
