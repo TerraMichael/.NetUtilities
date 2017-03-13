@@ -2,21 +2,20 @@
     ViewBag.Title = "michaelterra.com.br";
 }
 <!-- Header -->
-<a name="about"></a>
 <div class="intro-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
                     <h1>Michael Terra</h1>
-                    <h3>Desenvolvedor .NET</h3>
+                    <h3>Analista Desenvolvedor de Sistemas</h3>
                     <hr class="intro-divider">
                     <ul class="list-inline intro-social-buttons">
                         <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
                         <li>
                             <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
@@ -30,85 +29,76 @@
 </div>
 <!-- /.intro-header -->
 <!-- Page Content -->
-<a name="services"></a>
+<a name="about"></a>
 <div class="content-section-a">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-sm-6">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Experiência Profissional</h2>
-                <h3>Thomson Reuters</h3>
-                <b class="lead">Programador Pleno</b>
-                <ul class="list-group">
-                    <li>Manutenção e Desenvolvimento de customizações no Sistema Jurídico Tedesco Next;</li>
-                    <li>Programação em: ASP. NET MVC e Webforms / C# e Javascript/JQuery/AngularJS;</li>
-                    <li>Banco de Dados: SQL Server 2012 e Oracle 11g;</li>
-                    <li>Elaboração de Documento Técnico a partir do escopo do projeto;</li>
-                    <li>Execução de Caso de Teste.</li>
-                </ul>
-                <i class="text-right">@Html.ActionLink("Ver Mais...", "ExperienciaProfissional")</i>
+                <h2 class="section-heading">Michael Terra?</h2>
+                <h3>Ok... Mas quem é?</h3>
+                <p class="lead">
+                    Quando queremos contratar um serviço, um dos primeiros e principais passos a ser tomado é procurar um fornecedor de confiança, certo? <br />
+                    Afinal, não queremos um produto <s>Meia boca</s> mal feito, não é mesmo?<br />
+                    @Html.ActionLink("Clique aqui", "about") e conheça um pouco sobre meu perfil profissional e até mesmo caracteristicas pessoais que agregam valor - e muito - no desenvolvimento de meus produtos e até mesmo na relação com meus clientes.
+                </p>
+                <i class="text-right">@Html.ActionLink("Ver mais...", "about")</i>
             </div>
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <img class="img-responsive" src="img/ipad.png" alt="">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                <img class="img-responsive img-thumbnail" style="margin-top: 85px" src="~/img/about.png" alt="Who am I ?">
             </div>
         </div>
     </div>
     <!-- /.container -->
 </div>
 <!-- /.content-section-a -->
+<a name="services"></a>
 <div class="content-section-b">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Qualificações Profissionais</h2>
-                <ul>
-                    <li>.NET: C#, ASP.NET (Webforms e MVC);</li>
-                    <li>Conhecimento em padrões e boas práticas de desenvolvimento:</li>
-                    <li class="list-unstyled">
-                        <ul>
-                            <li>Programação Orientada a Objetos;</li>
-                            <li>Design Driven Development;</li>
-                            <li>Injeção de dependência;</li>
-                        </ul>
-                    </li>
-                    <li>Integração de Sistemas (SOAP e REST);</li>
-                    <li>Front-End: Javascript, JQuery, HTML5, CSS3, Bootstrap e AngularJS;</li>
-                </ul>
-                <i class="text-right">@Html.ActionLink("Ver Mais...", "QualificacoesProfissionais")</i>
+                <h2 class="section-heading">E o que eu faço?</h2>
+                <p class="lead">
+                    Desenvolvo soluções web procurando sempre manter a melhor qualidade e performance. É basicamente isso!<br />
+                    Se você sempre quis ter um site pessoal, blog, um sistema web para sua empresa ou até mesmo uma solução nova a qual deseja colocar em prática,
+                    porém não tem os recursos técnicos necessários, você simplesmente pode entrar em contato para que possamos conversar, discutir e analisar a ideia.</p>
+                <p class="lead">
+                    <i class="text-right">@Html.ActionLink("Clique aqui", "orcamento")</i> para entrar em contato e detalhar a sua solicitação ou agende um horário para conversarmos. :D
+                </p>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                <img class="img-responsive" src="img/dog.png" alt="">
+                <img class="img-responsive" src="~/img/mac.png" alt="">
             </div>
         </div>
     </div>
     <!-- /.container -->
 </div>
 <!-- /.content-section-b -->
+<a name="contact"></a>
 <div class="content-section-a">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-sm-6">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Informações Adicionais</h2>
-                <ul>
-                    <li>Inglês intermediário;</li>
-                    <li>Espanhol Básico;</li>
-                    <li>Interesse em atuar com novas tecnologias e linguagens.</li>
-                </ul>
+                <h2 class="section-heading">Contatos</h2>
+                <p class="lead">
+                    <label>Celular/Whatsapp: </label> <span>(11) 98435-2419 (TIM)</span><br />
+                    <label>E-mail: </label> <span><a href="mailto:michaelterra@gmail.com">michaelterra@gmail.com</a></span><br />
+                    <label>Skype: </label> <span><a href="skype:vo.lg@hotmail.com?call">vo.lg@hotmail.com</a></span><br /> 
+                </p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <img class="img-responsive" src="img/phones.png" alt="">
+                <img class="img-responsive" src="~/img/phones.png" alt="">
             </div>
         </div>
     </div>
     <!-- /.container -->
 </div>
 <!-- /.content-section-a -->
-<a name="contact"></a>
 <div class="banner">
     <div class="container">
         <div class="row">
@@ -118,10 +108,10 @@
             <div class="col-lg-6">
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
                     <li>
                         <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
